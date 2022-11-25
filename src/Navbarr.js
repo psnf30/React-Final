@@ -11,12 +11,6 @@ var MyFont = {
     fontFamily:'cursive'
 
 };
-var MyFont1 = {
-    color:'#f794c6',
-    fontSize: '150%',
-    fontFamily:'cursive'
-
-};
 var MyFont2 = {
     color:'#FFFF',
     fontSize: '120%',
@@ -43,20 +37,21 @@ export const Navbarr = () =>{
                     <img src="logo512.png" alt="" height="100"></img>
                     <babel style={MyFont}>Numerical  Project</babel>
                 </Navbar.Brand>
+                    <Nav.Link href="/Home" style={MyFont}>Home</Nav.Link>
                     <Dropdown className="Dropdownbtn">
                         <Dropdown.Toggle variant="dark" id="dropdown-basic" style={MyFont3}>Root of Equation</Dropdown.Toggle>    
                         <Dropdown.Menu>
-                            <Nav.Link as ={Link} to="/Bisection">Bisection</Nav.Link>
-                            <Nav.Link as ={Link} to="/False">FalsePosition</Nav.Link>
-                            <Nav.Link as ={Link} to="/Newton">Newton Raphson</Nav.Link>
+                            <Nav.Link as ={Link} to="/Bisection" >Bisection</Nav.Link>
+                            <Nav.Link as ={Link} to="/False" >FalsePosition</Nav.Link>
+                            <Nav.Link as ={Link} to="/Newton" >Newton Raphson</Nav.Link>
                 
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown className="Dropdownbtn">
                         <Dropdown.Toggle variant="dark" id="dropdown-basic" style={MyFont3}>Linear Algebraic Equation</Dropdown.Toggle>    
                         <Dropdown.Menu>
-                            <Nav.Link as ={Link} to="">Guass Eliminatio9n Method</Nav.Link>
-                            <Nav.Link as ={Link} to="">Matrix Inversion Method</Nav.Link>
+                            <Nav.Link as ={Link} to="/Matrixx">Guass Elimination Method</Nav.Link>
+                            <Nav.Link as ={Link} to="/Matrix">Matrix Inversion Method</Nav.Link>
                         </Dropdown.Menu>
                     </Dropdown>
                 
